@@ -551,6 +551,7 @@
 
 #portfolio {
   padding: 75px 0;
+  background-color: rgb(206, 200, 200);
 }
 
 #portfolio #portfolio-flters {
@@ -703,7 +704,8 @@
 
 /*Pricing-stylesheets-include-here*/
 #pricing {
-  padding: 75px;
+  padding-top: 75px;
+  padding-bottom: 50px;
   text-align: center;
 
 }
