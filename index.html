@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Other cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link href="./asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/vendor/lightbox/css/lightbox.min.css">
+
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./asset/css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./asset/img/rayung/logo cv indo rayung.jpg">
+  <link href="./asset/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <title>CV.Indo Rayung Nusantara</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="header">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./asset/img/rayung/logo_nobg.png" alt="" width="80px" class="px-2">
+        <span>CV.INDO RAYUNG <p>NUSANTARA</p> </span>
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col"></div>
+        </div>
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#carouselExampleInterval">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#layanan">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontak</a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
+              class="fa fa-whatsapp"></i> Chat Whatsapp</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <!-- slide1 -->
+        <div class="carousel-item active" data-bs-interval="22000">
+          <div class="carousel-content">
+            <p class="company mt-3">Important Fac</p>
+            <p class="deskripsi">Ketahui fakta </p>
+            <p class="deskripsi">tentang glagah</p>
+            <p class="deskripsi">bahan baku sapu lantai</p>
+            <hr />
+
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
+                class="fa fa-whatsapp"></i> Konsultasi</a>
+          </div>
+          <!-- <img src="./asset/img/rayung/foto1.jpg" class="d-block w-100 gambarSlide" alt="..." /> -->
+          <section id="videoPromo" class="gambarSlide">
+            <video width="100%" autoplay muted loop>
+              <source src="./asset/vid/video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- slide2 -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-content">
+            <p class="company mt-3">Lorem, ipsum.</p>
+            <p class="deskripsi">Lorem, ipsum. </p>
+            <p class="deskripsi">Lorem, ipsum.</p>
+            <p class="deskripsi">Lorem ipsum dolor sit.</p>
+            <hr />
+            <!-- <p class="deskripsi2 mb-4">Advocate & Legal Consultant</p> -->
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
+                class="fa fa-whatsapp"></i> Konsultasi</a>
+          </div>
+          <img src="./asset/img/rayung/foto8.jpg" class="d-block w-100 gambarSlide" alt="..." />
+        </div>
+        <!-- slide3 -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-content">
+            <p class="company mt-3">Lorem, ipsum.</p>
+            <p class="deskripsi">Lorem, ipsum. </p>
+            <p class="deskripsi">Lorem, ipsum.</p>
+            <p class="deskripsi">Lorem ipsum dolor sit.</p>
+            <hr />
+            <!-- <p class="deskripsi2 mb-4">Advocate & Legal Consultant</p> -->
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
+                class="fa fa-whatsapp"></i> Konsultasi</a>
+          </div>
+          <img src="./asset/img/rayung/foto3.jpg" class="d-block w-100 gambarSlide" alt="..." />
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Carousel  -->
+
+  <!-- Feature -->
+  <section id="featured-services">
+    <div class="container">
+      <div class="row  ">
+
+        <div class="col-lg-4 box text-center keunggulan">
+
+          <i class="ion-ios-bookmarks-outline"></i>
+          <h4 class="title">Lorem ipsum.</h4>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+            occaecati cupiditate non provident</p>
+        </div>
+
+        <div class="col-lg-4 box box-bg text-center keunggulan">
+
+          <i class="ion-ios-stopwatch-outline"></i>
+          <h4 class="title">Lorem ipsum</h4>
+          <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat tarad limino ata</p>
+        </div>
+
+        <div class="col-lg-4 box text-center keunggulan">
+
+          <i class="ion-ios-heart-outline"></i>
+          <h4 class="title">Lorem ipsum</h4>
+          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- End Feature -->
+
+
+  <!-- About -->
+  <div class="" id="about">
+    <div class="container about">
+      <div class="row text-center mb-5 ">
+        <div class="col">
+          <h1>About <span>Us</span> </h1>
+          <div class="line mt-3 mb-3"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nesciunt!</p>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="row  fs-5 ">
+          <div class="col-lg-6 align-self-center  text-start" id="infoAbout">
+            <h3 class="mb-3"><span>Lorem</span> ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque itaque nesciunt delectus
+              voluptate nisi inventore libero ex laboriosam quisquam soluta praesentium dicta possimus at totam eaque,
+              distinctio ut a? Nesciunt ea praesentium facere sint deleniti quod ut libero. Consequatur inventore quos
+              provident nisi, nostrum vel distinctio enim, perferendis voluptatem quasi nobis quaerat, aut nesciunt
+              explicabo sed? Magnam, consequuntur ex asperiores debitis quisquam minus et?
+            </p>
+          </div>
+          <div class="col-lg-6 text-center ">
+            <img src="./asset/img/rayung/logo_nobg.png" alt="R&P Law Office Logo" width="320px" />
+          </div>
+        </div>
+
+        <!-- vision mision -->
+        <div class="row about-cols mt-3">
+          <div class="col-md-4 fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="./asset/img/rayung/foto7.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
+                enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="./asset/img/rayung/foto1.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam,
+                eaque
+                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="./asset/img/rayung/foto2.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione
+                voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- End About -->
+
+
+  <!-- Our Produk -->
+  <div class="" id="produk">
+    <section class="produk">
+      <div class="container">
+        <h1 class="text-center judulProduk  text-white">Our Product</h1>
+        <div class="line mb-5"></div>
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-6">
+              <!-- judul service -->
+              <a class="image-with-hover-overlay image-hover-zoom" href="https://rnp-lawoffice.com/">
+                <div class="image-hover-overlay">
+                  <div class="image-hover-overlay-content  px-5 randp">
+                    <h2 class="text-thin text-center mb-3">Bahan Baku Sapu Lantai</h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum quaerat eum, nam veniam
+                      reiciendis assumenda ex quod amet in velit rerum? Quam maxime suscipit porro similique laudantium
+                      consequuntur repudiandae fuga voluptatem provident quod commodi, rerum quaerat ad modi
+                      necessitatibus minima, deserunt nam unde voluptas ut? Quod, nostrum quam? Eius doloribus quidem,
+                      id ullam esse tempora. Nemo porro nesciunt animi.</p>
+                    <div class="tombolLink text-center">
+                      <button class="btn btn-success">Selengkapnya</button>
+                    </div>
+                  </div>
+                </div>
+                <img class="fotoProduk" src="./asset/img/rayung/fotocircle.png" alt="" />
+              </a>
+            </div>
+            <div class="col-lg-6 text-white">
+              <h2 class="text-thin text-center mb-3">Lorem ipsum dolor sit amet.</h2>
+              <h4 class="quotes mb-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                voluptatibus?"</h4>
+              <h5 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et minus beatae delectus,
+                similique
+                rem culpa blanditiis illo deleniti nihil aspernatur repellat, at suscipit distinctio sequi praesentium
+                ex omnis. Itaque qui enim nesciunt officiis obcaecati quaerat voluptatibus magnam earum rem magni, ad
+                autem consequatur! Iste necessitatibus corrupti exercitationem illum, magni sunt vel? Non nihil
+                cupiditate explicabo.:</h5>
+              <h5 class="">
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad!</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, excepturi.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <!-- End Our Produk -->
+
+  <!-- keunggulan  -->
+  <section id="call-to-action" class="wow fadeIn">
+    <div class="container text-center">
+      <h3>Call To Action</h3>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a class="cta-btn" href="#">Call To Action</a>
+    </div>
+  </section>
+  <!-- end keunggulan -->
+
+
+  <!-- portfolio -->
+  <section id="portfolio" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h1 class="section-title text-center  ">Gallery</h1>
+        <div class="line mt-3 mb-5"></div>
+      </header>
+
+      <div class="row ">
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+      <!-- foto galeri -->
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto8.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto8.jpg" data-lightbox="portfolio" data-title="Foto1" class="link-preview"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">App 1</a></h4>
+              <p>App</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto2.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Foto2"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Web 3</a></h4>
+              <p>Web</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto7.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Foto3"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">App 2</a></h4>
+              <p>App</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto10.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto10.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto4"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Card 2</a></h4>
+              <p>Card</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto9.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto9.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto5"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Web 2</a></h4>
+              <p>Web</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="./asset/img/rayung/foto3.jpg" class="img-fluid" alt="">
+              <a href="./asset/img/rayung/foto3.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto6"
+                title="Preview"><i class="ion ion-eye"></i></a>
+              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </figure>
+            <!-- 
+            <div class="portfolio-info">
+              <h4><a href="#">App 3</a></h4>
+              <p>App</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- video galeri -->
+      <div class="row portfolio-container ">
+        <div class="col-lg-6 col-md-6  filter-card ">
+          <div class="portfolio-wrap">
+            <figure>
+              <video controls muted loop class="img-fluid">
+                <source src="./asset/vid/video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Card 1</a></h4>
+              <p>Card</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6  filter-card  ">
+          <div class="portfolio-wrap">
+            <figure>
+              <video controls muted loop class="img-fluid">
+                <source src="./asset/vid/video4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Card 3</a></h4>
+              <p>Card</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row portfolio-container justify-content-center ">
+        <div class="col-lg-6 col-md-6  filter-card align-items-center ">
+          <div class="portfolio-wrap">
+            <figure>
+              <video controls muted loop class="img-fluid">
+                <source src="./asset/vid/video5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+
+            <!-- <div class="portfolio-info">
+              <h4><a href="#">Web 1</a></h4>
+              <p>Web</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <!-- end portfolio -->
+
+
+
+  <!--Pricing-Section-Start-->
+  <section id="pricing">
+    <div class="container">
+      <div class="col mb-5">
+        <div class="heading ">
+          <h2 class="mt-3 mb-3">PRICE PACKAG<span>ES</span></h2>
+          <div class="line mb-3"></div>
+          <p class="mb-5"><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod
+            tempor
+            incididunt ut
+            et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+            <ul class="pricing">
+              <li class="plan-header">
+                <div class="price-duration">
+                  <div class="price"> $39 </div>
+                  <div class="duration"> 5 kg </div>
+                </div>
+                <div class="plan-name"> Starter </div>
+              </li>
+              <li><strong>1</strong> DOMAIN</li>
+              <li><strong>100GB</strong> DISK SPACE</li>
+              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+              <li>SHARED SSL CERTIFICATE</li>
+              <li><strong>10</strong> EMAIL ADDRESS</li>
+              <li><strong>24/7</strong> SUPPORT</li>
+              <li><a class="btn-order" href="#">Order Now</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+            <ul class="pricing">
+              <li class="plan-header">
+                <div class="price-duration justify-items-center">
+                  <div class="price"> $69 </div>
+                  <p>10 kg</p>
+                </div>
+                <div class="plan-name"> Business </div>
+              </li>
+              <li><strong>3</strong> DOMAIN</li>
+              <li><strong>300GB</strong> DISK SPACE</li>
+              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+              <li>SHARED SSL CERTIFICATE</li>
+              <li><strong>30</strong> EMAIL ADDRESS</li>
+              <li><strong>24/7</strong> SUPPORT</li>
+              <li><a class="btn-order" href="#">Order Now</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+            <ul class="pricing">
+              <li class="plan-header">
+                <div class="price-duration">
+                  <div class="price"> $99 </div>
+                  <div class="duration"> 15 kg </div>
+                </div>
+                <div class="plan-name"> Pro </div>
+              </li>
+              <li><strong>5</strong> DOMAIN</li>
+              <li><strong>500GB</strong> DISK SPACE</li>
+              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+              <li>SHARED SSL CERTIFICATE</li>
+              <li><strong>50</strong> EMAIL ADDRESS</li>
+              <li><strong>24/7</strong> SUPPORT</li>
+              <li><a class="btn-order" href="#">Order Now</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+            <ul class="pricing">
+              <li class="plan-header">
+                <div class="price-duration">
+                  <div class="price"> $199 </div>
+                  <div class="duration"> p20 kg </div>
+                </div>
+                <div class="plan-name"> Ultra </div>
+              </li>
+              <li><strong>10</strong> DOMAIN</li>
+              <li><strong>1000GB</strong> DISK SPACE</li>
+              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+              <li>SHARED SSL CERTIFICATE</li>
+              <li><strong>100</strong> EMAIL ADDRESS</li>
+              <li><strong>24/7</strong> SUPPORT</li>
+              <li><a class="btn-order" href="#">Order Now</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Kontak -->
+  <div class="" id="contact">
+    <section class="kontak">
+      <div class="container">
+        <div class="deskripsiKontak text-center">
+          <h1>Contact Us</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusamus laudantium perferendis aliquam
+            aut sequi explicabo! Magnam deleniti eius tenetur atque voluptas ipsa ut! A exercitationem obcaecati modi
+            accusamus at soluta aliquid, dignissimos eaque ullam eveniet. Omnis, magni nostrum, nihil qui quisquam quasi
+            reprehenderit dolorum pariatur quae dignissimos aspernatur recusandae.</p>
+        </div>
+        <div class="container infoKontak">
+          <div class="row gy-4 justify-content-center">
+            <h3 class="text-center">Office Yogyakarta</h3>
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Lokasi:</h4>
+                  <p> <a
+                      href="https://www.google.com/maps/place/R%26P+Law+Office/@-7.825529,110.2549,12z/data=!4m5!3m4!1s0x0:0x817be8c3d9255a88!8m2!3d-7.8255288!4d110.2548998?hl=id">Polaman,
+                      RT/RW: 014/000, Argorejo, Sedayu, Bantul, D.I.Yogyakarta.</a> </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p><a href="https://mailto:rnplawoffice2015@gmail.com">rnplawoffice2015@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Telp:</h4>
+                  <p><a href="https://api.whatsapp.com/send?phone=628112642402">+62 8222 416 0754</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  <!-- gmap -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53178.85947617357!2d110.240482994728!3d-7.8381593645948895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x817be8c3d9255a88!2sR%26P%20Law%20Office!5e0!3m2!1sid!2sid!4v1659163489264!5m2!1sid!2sid"
+    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- End Kontak -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <div class="row">
+              <div class="col-lg-6 footer-links">
+                <h4>Layanan Kami</h4>
+                <ul>
+                  <li><a href="service.html">Litigasi</a></li>
+                  <li><a href="service.html">Praktik Multi Disiplin</a></li>
+                  <li><a href="service.html">Perbankan & Keuangan</a></li>
+                  <li><a href="service.html">Pertambangan</a></li>
+                  <li><a href="service.html">Asuransi</a></li>
+                  <li><a href="service.html">Ketenagakerjaan</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 footer-links">
+                <h4><br></h4>
+                <ul>
+                  <li><a href="service.html">Pertanahan</a></li>
+                  <li><a href="service.html">Kekayaan Intelektual</a></li>
+                  <li><a href="service.html">Kesehatan</a></li>
+                  <li><a href="service.html">Ekspor & Impor</a></li>
+                  <li><a href="service.html">Kepailitan</a></li>
+                  <li><a href="service.html">Kepailitan</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="footer-info">
+              <img src="./asset/img/rayung/logo_nobg.png" alt="" width="150px">
+              <p class="">Head Office :
+                Soho-Capital-Podomoro City, 25th Floor, Unit 2508. Jl.Letjen.S.Parman, Kav.28, Tanjung Duren Selatan,
+                Grogol Petamburan, Jakarta Barat.<br><br>
+                Office Yogyakarta : Polaman, RT/RW: 014/000, Argorejo, Sedayu, Bantul, D.I.Yogyakarta.<br><br>
+
+
+                <strong>Phone:</strong> <a href="https://api.whatsapp.com/send?phone=628112642402">+62 8222 416 0754</a>
+                <br>
+                <strong>Email:</strong> <a href="https://mailto:rnplawoffice2015@gmail.com">contoh@gmail.com</a><br>
+              </p>
+              <div class="social-links d-flex justify-content-center mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Sample</span></strong>.
+        </div>
+        <div class="credits">
+          Created by <a href="https://api.whatsapp.com/send?phone=6282224160754">Lazuardi Yudistira</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scroll Up -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+  <!-- Scroll End -->
+
+  <!-- WhatsAap floating Button -->
+  <a href="https://api.whatsapp.com/send?phone=628112642402" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <!-- End Whatsapp -->
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+
+
+  <!-- Vendor Js -->
+  <script src="./asset/vendor/jquery/jquery.min.js"></script>
+  <script src="./asset/vendor/lightbox/js/lightbox.min.js"></script>
+
+
+  <!-- Lord icon -->
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fb1f2e46f7.js" crossorigin="anonymous"></script>
+
+
+  <!-- My Js -->
+  <script src="./asset/js/script.js"></script>
+
+
+</body>
+
+</html>
