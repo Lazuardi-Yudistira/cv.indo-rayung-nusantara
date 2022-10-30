@@ -1,0 +1,19 @@
+
+
+#333333  dark gray footer
+
+#999999  semi gray footer
+
+#484848  sosial link gray footer
+
+rgba(228, 228, 224, 0.859) white gray menu
+
+
+
+
+#4e727d  azure blue copyright created
+
+
+#048221 logo rayung ijo tua
+#34af19 logo rayung ijo muda
+#c6901c logo rayung gold cream
