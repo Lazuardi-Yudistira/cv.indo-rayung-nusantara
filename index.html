@@ -1,775 +1,1467 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Other cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <link href="./asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="./asset/vendor/lightbox/css/lightbox.min.css">
+    <!-- Other cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link href="./asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/vendor/lightbox/css/lightbox.min.css">
 
 
-  <!-- my css -->
-  <link rel="stylesheet" href="./asset/css/style.css" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./asset/img/rayung/logo cv indo rayung.jpg">
-  <link href="./asset/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./asset/img/rayung/logo cv indo rayung.jpg">
+    <link href="./asset/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-  <title>CV.Indo Rayung Nusantara</title>
-</head>
+    <title>CV.Indo Rayung Nusantara</title>
+  </head>
 
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="header">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./asset/img/rayung/logo_nobg.png" alt="" width="80px" class="px-2">
-        <span>CV.INDO RAYUNG <p>NUSANTARA</p> </span>
-      </a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <div class="row">
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="header">
+      <div class="container">
+        <div class="ms-5"><a class="navbar-brand" href="#">
+            <img src="./asset/img/rayung/logo_nobg.png" alt="" width="80px" class="">
+            <span>CV.INDO RAYUNG <p>NUSANTARA</p> </span>
+          </a></div>
+
+        <button class=" navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#carouselExampleInterval">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="text-center mx-3 my-3">
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=6281391749911"><i
+                class="fa fa-whatsapp"></i> Whatsapp</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <!-- slide1 -->
+          <div class="carousel-item active" data-bs-interval="22000">
+            <div class="carousel-content">
+              <p class="company mt-3">Indo Rayung <span>Nusantara</span></p>
+              <p class="deskripsi">Best Grass Broom &</p>
+              <p class="deskripsi">Raw Material Supplier Company</p>
+              <p class="deskripsi">From Indonesia</p>
+              <hr />
+
+              <a class="btn btn-success mt-3" href="https://api.whatsapp.com/send?phone=6281391749911"><i
+                  class="fa fa-whatsapp"></i> Chat Us</a>
+            </div>
+
+            <section id="videoPromo" class="gambarSlide">
+              <video width="100%" autoplay muted loop>
+                <source src="./asset/vid/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          <!-- slide2 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-content">
+              <p class="company mt-3">Indo Rayung <span>Nusantara</span></p>
+              <p class="deskripsi">Our Grass Broom Products </p>
+              <p class="deskripsi">Are Taken From</p>
+              <p class="deskripsi">High Quality Raw Materials</p>
+              <hr />
+
+              <a class="btn btn-success mt-3" href="https://api.whatsapp.com/send?phone=6281391749911"><i
+                  class="fa fa-whatsapp"></i> Chat Us</a>
+            </div>
+            <img src="./asset/img/rayung/foto8.jpg" class="d-block w-100 gambarSlide" alt="..." />
+          </div>
+          <!-- slide3 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-content">
+              <p class="company mt-3">Indo Rayung <span>Nusantara</span></p>
+              <p class="deskripsi">We Always Keep Trust, </p>
+              <p class="deskripsi">Customer Satisfaction</p>
+              <p class="deskripsi">Is Our Motto</p>
+              <hr />
+
+              <a class="btn btn-success mt-3" href="https://api.whatsapp.com/send?phone=6281391749911"><i
+                  class="fa fa-whatsapp"></i> Chat Us</a>
+            </div>
+            <img src="./asset/img/rayung/foto3.jpg" class="d-block w-100 gambarSlide" alt="..." />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- End Carousel  -->
+
+    <!-- Feature -->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row  ">
+
+          <div class="col-lg-4 box text-center keunggulan">
+
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title fs-5">Customer Care</h4>
+            <p class="description fs-6">We are ready to help and serve your request sincerely</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg text-center keunggulan">
+
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title fs-5">Fast Response & Delivery</h4>
+            <p class="description fs-6">We will respond to your request and delivery of goods quickly</p>
+          </div>
+
+          <div class="col-lg-4 box text-center keunggulan">
+
+            <i class="ion-android-globe"></i>
+            <h4 class="title fs-5">Export Between Country</h4>
+            <p class="description fs-6">
+              We are ready to supply raw materials to worldwide</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- End Feature -->
+
+
+    <!-- About -->
+    <div class="" id="about">
+      <div class="container about">
+        <div class="row text-center mb-5 ">
           <div class="col">
-          </div>
-          <div class="col"></div>
-        </div>
-        <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#carouselExampleInterval">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#layanan">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontak</a>
-          </li>
-        </ul>
-        <div class="text-center">
-          <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
-              class="fa fa-whatsapp"></i> Chat Whatsapp</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar -->
+            <h1>About <span>Us</span> </h1>
+            <div class="line mt-3 mb-3"></div>
+            <p>CV.INDO RAYUNG NUSANTARA</p>
 
-
-
-
-  <!-- Carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-        <!-- slide1 -->
-        <div class="carousel-item active" data-bs-interval="22000">
-          <div class="carousel-content">
-            <p class="company mt-3">Important Fac</p>
-            <p class="deskripsi">Ketahui fakta </p>
-            <p class="deskripsi">tentang glagah</p>
-            <p class="deskripsi">bahan baku sapu lantai</p>
-            <hr />
-
-            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
-                class="fa fa-whatsapp"></i> Konsultasi</a>
-          </div>
-          <!-- <img src="./asset/img/rayung/foto1.jpg" class="d-block w-100 gambarSlide" alt="..." /> -->
-          <section id="videoPromo" class="gambarSlide">
-            <video width="100%" autoplay muted loop>
-              <source src="./asset/vid/video1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-        </div>
-        <!-- slide2 -->
-        <div class="carousel-item" data-bs-interval="3000">
-          <div class="carousel-content">
-            <p class="company mt-3">Lorem, ipsum.</p>
-            <p class="deskripsi">Lorem, ipsum. </p>
-            <p class="deskripsi">Lorem, ipsum.</p>
-            <p class="deskripsi">Lorem ipsum dolor sit.</p>
-            <hr />
-            <!-- <p class="deskripsi2 mb-4">Advocate & Legal Consultant</p> -->
-            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
-                class="fa fa-whatsapp"></i> Konsultasi</a>
-          </div>
-          <img src="./asset/img/rayung/foto8.jpg" class="d-block w-100 gambarSlide" alt="..." />
-        </div>
-        <!-- slide3 -->
-        <div class="carousel-item" data-bs-interval="3000">
-          <div class="carousel-content">
-            <p class="company mt-3">Lorem, ipsum.</p>
-            <p class="deskripsi">Lorem, ipsum. </p>
-            <p class="deskripsi">Lorem, ipsum.</p>
-            <p class="deskripsi">Lorem ipsum dolor sit.</p>
-            <hr />
-            <!-- <p class="deskripsi2 mb-4">Advocate & Legal Consultant</p> -->
-            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=628112642402"><i
-                class="fa fa-whatsapp"></i> Konsultasi</a>
-          </div>
-          <img src="./asset/img/rayung/foto3.jpg" class="d-block w-100 gambarSlide" alt="..." />
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!-- End Carousel  -->
-
-  <!-- Feature -->
-  <section id="featured-services">
-    <div class="container">
-      <div class="row  ">
-
-        <div class="col-lg-4 box text-center keunggulan">
-
-          <i class="ion-ios-bookmarks-outline"></i>
-          <h4 class="title">Lorem ipsum.</h4>
-          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-            occaecati cupiditate non provident</p>
-        </div>
-
-        <div class="col-lg-4 box box-bg text-center keunggulan">
-
-          <i class="ion-ios-stopwatch-outline"></i>
-          <h4 class="title">Lorem ipsum</h4>
-          <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat tarad limino ata</p>
-        </div>
-
-        <div class="col-lg-4 box text-center keunggulan">
-
-          <i class="ion-ios-heart-outline"></i>
-          <h4 class="title">Lorem ipsum</h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- End Feature -->
-
-
-  <!-- About -->
-  <div class="" id="about">
-    <div class="container about">
-      <div class="row text-center mb-5 ">
-        <div class="col">
-          <h1>About <span>Us</span> </h1>
-          <div class="line mt-3 mb-3"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nesciunt!</p>
-
-        </div>
-      </div>
-      <div class="container">
-        <div class="row  fs-5 ">
-          <div class="col-lg-6 align-self-center  text-start" id="infoAbout">
-            <h3 class="mb-3"><span>Lorem</span> ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque itaque nesciunt delectus
-              voluptate nisi inventore libero ex laboriosam quisquam soluta praesentium dicta possimus at totam eaque,
-              distinctio ut a? Nesciunt ea praesentium facere sint deleniti quod ut libero. Consequatur inventore quos
-              provident nisi, nostrum vel distinctio enim, perferendis voluptatem quasi nobis quaerat, aut nesciunt
-              explicabo sed? Magnam, consequuntur ex asperiores debitis quisquam minus et?
-            </p>
-          </div>
-          <div class="col-lg-6 text-center ">
-            <img src="./asset/img/rayung/logo_nobg.png" alt="R&P Law Office Logo" width="320px" />
           </div>
         </div>
-
-        <!-- vision mision -->
-        <div class="row about-cols mt-3">
-          <div class="col-md-4 fadeInUp">
-            <div class="about-col">
-              <div class="img">
-                <img src="./asset/img/rayung/foto7.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
-                enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="./asset/img/rayung/foto1.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam,
-                eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img">
-                <img src="./asset/img/rayung/foto2.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione
-                voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- End About -->
-
-
-  <!-- Our Produk -->
-  <div class="" id="produk">
-    <section class="produk">
-      <div class="container">
-        <h1 class="text-center judulProduk  text-white">Our Product</h1>
-        <div class="line mb-5"></div>
         <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-lg-6">
-              <!-- judul service -->
-              <a class="image-with-hover-overlay image-hover-zoom" href="https://rnp-lawoffice.com/">
-                <div class="image-hover-overlay">
-                  <div class="image-hover-overlay-content  px-5 randp">
-                    <h2 class="text-thin text-center mb-3">Bahan Baku Sapu Lantai</h2>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum quaerat eum, nam veniam
-                      reiciendis assumenda ex quod amet in velit rerum? Quam maxime suscipit porro similique laudantium
-                      consequuntur repudiandae fuga voluptatem provident quod commodi, rerum quaerat ad modi
-                      necessitatibus minima, deserunt nam unde voluptas ut? Quod, nostrum quam? Eius doloribus quidem,
-                      id ullam esse tempora. Nemo porro nesciunt animi.</p>
-                    <div class="tombolLink text-center">
-                      <button class="btn btn-success">Selengkapnya</button>
+          <div class="row  fs-5 ">
+            <div class="col-lg-6 align-self-center  text-start" id="infoAbout">
+              <h3 class="mb-3"><span>CV. INDO RAYUNG</span> NUSANTARA</h3>
+              <p class="text-start">
+                Indonesia has abundant natural resources,
+                One of them is <strong>Glagah</strong>, which is the raw material for making grass brooms. Cv.IndoRayung
+                Nusantara is a company that produces and supplies grass brooms and their raw materials. Founded by Abdul
+                Mujib Rifai, Cv.IndoRayung Nusantara is located in Cikadu, Watukumpul, Pemalang, Central Java. Our
+                company
+                always committed to providing the best quality grass brooms products and ready exported to worldwide.
+              </p>
+            </div>
+            <div class="col-lg-6 text-center ">
+              <img src="./asset/img/rayung/logo_nobg.png" alt="R&P Law Office Logo" width="320px" />
+            </div>
+          </div>
+
+          <!-- vision mision -->
+          <div class="row about-cols mt-3">
+            <div class="col-md-4 fadeInUp">
+              <div class="about-col">
+                <div class="img">
+                  <img src="./asset/img/rayung/foto24.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Mission</a></h2>
+                <p class="fs-5 px-3 pb-4 text-center">
+                  Always committed to utilizing high quality grass broom raw materials from farmers in the surrounding
+                  environment to be processed and produce the best quality grass brooms
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="about-col">
+                <div class="img">
+                  <img src="./asset/img/rayung/foto15.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="ion-ios-list-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Plan</a></h2>
+                <p class="fs-5 px-3 pb-4 text-center">
+                  Improving the economy villager in the Watukumpul area through optimizing the local community's
+                  agricultural products by marketing worldwide and empower all Cikadu Villagers to join our company in
+                  producing Grass Broom Raw Materials into Grass Brooms
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="about-col">
+                <div class="img">
+                  <img src="./asset/img/rayung/foto9.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Vision</a></h2>
+                <p class="fs-5 px-3 pb-4 text-center">
+                  To be a leading company in producing and supplying the best and most trusted brooms and grass raw
+                  materials in the worldwide
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End About -->
+
+
+    <!-- Our Produk -->
+    <div class="" id="produk">
+      <section class="produk">
+        <div class="container">
+          <h1 class="text-center judulProduk  text-white">Our Product</h1>
+          <div class="line"></div>
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+              <div class="col-lg-6 mt-3">
+                <!-- judul service -->
+                <a class="image-with-hover-overlay image-hover-zoom  mt-5 mb-3">
+                  <div class="image-hover-overlay randp">
+                    <div class="image-hover-overlay-content  px-5 ">
+                      <h1 class="text-thin text-center mb-3">
+                        Glagah</h1>
+                      <h4>
+                        Glagah is a type of wild plant that can grow and mutiply
+
+                        quickly.Reed belongs to the Poaceae family such as rice,
+
+                        wheat, corn and barley. This plant has a segmented stem and
+
+                        can grow from 1 to 3 meters. Have strong and deep roots
+                        This plant can grow in a variety of habitats such as forests,
+
+                        gardens, rivers, lakes, swamps and rice fields.</h4>
+
+                    </div>
+                  </div>
+                  <img class="fotoProduk" src="./asset/img/rayung/foto16-b.png" alt="" />
+                </a>
+
+              </div>
+              <div class="col-lg-6 text-white">
+                <h2 class="text-center mb-3">
+                  Grass Broom Raw Material</h2>
+                <h4 class="quotes mb-3 text-center">"what do you know about Glagah?"</h4>
+                <h5 class="mb-3">Glagah is a type of wild plant that can grow and reproduce quickly. Glagah
+                  belongs to
+                  the
+                  Poaceae family such as bamboo, rice, wheat, corn and barley. This plant has a segmented stem and can
+                  grow from 1 to 3 meters. It has strong and deep roots. This plant can grow in various habitats such as
+                  forests, gardens, rivers, lakes, swamps and rice fields. Usually Glagah is often considered a pest
+                  because it grows wild and can interfere with other plants, therefore, farmers usually cut and throw
+                  this
+                  plant away. However, did you know that this plant has its own benefits? Among the benefits are as
+                  follows:</h5>
+                <h5 class="mb-3 ">
+                  <ul>
+                    <li>Prevents soil erosion because it has deep roots, rhizomes and fast reproduction, making this
+                      plant suitable for erosion prevention.</li>
+                    <li>Serves to absorb water mixed with organic waste such as animal and human waste because it is
+                      able to absorb water in large quantities.</li>
+                    <li>Can be used as animal feed.</li>
+                    <li>And useful as a raw material for making grass brooms.</li>
+                  </ul>
+                </h5>
+                <h5 class="">In this case, CV.IndoRayung Nusantara together with the Cikadu Villager utilize Glagah
+                  plants as raw materials for our processed products, one of which is a <strong>grass broom</strong>.
+                  The raw materials we deliver are sorted with the best quality. We are ready to be the best
+                  manufacturer
+                  and supplier of grass
+                  brooms or materials with high quality products in large quantities for all your needs.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <!-- End Our Produk -->
+
+
+    <!-- keunggulan  -->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3 class="">Customer Satisfaction is Our Goal</h3>
+        <p>
+          As a manufacturer and supplier of the best grass brooms and raw materials, we choose high quality raw
+          materials
+          for you. We are ready to ship and export our products all over the world. Our main products are grass brooms
+          are
+          made from selected raw materials to produce the best grass broom products.
+        </p>
+        <a class="cta-btn" href="https://api.whatsapp.com/send?phone=6281391749911">Order Here</a>
+      </div>
+    </section>
+    <!-- end keunggulan -->
+
+
+
+    <!-- Layanan/variant produk/catalog -->
+    <div class="" id="layanan">
+      <section class="layanan">
+        <h1 class="text-center judulLayanan mb-3 pb-5 text-white">Our <span style="color:#34af19">Product Variant</span>
+        </h1>
+
+        <!-- service carousel -->
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="true">
+          <!-- tombol next dan preview arrow -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+
+
+          <div class="container">
+            <div class="carousel-inner px-2">
+
+              <!-- slide 1 -->
+              <div class="carousel-item active">
+                <div class="row g-5">
+                  <!-- service 1 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn  pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu1"
+                        aria-expanded="false" aria-controls="kartu1">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Sapu SMS.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+                        </div>
+                        <h3 style="color:#34af19;">SMS Grass Broom</h3>
+                        <p class="pt-3" style="color:#34af19;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu1">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="5">3</td>
+                              <td rowspan="5">Rayung</td>
+                              <td>Material</td>
+                              <td>Rayung, Bamboo, Wlingi, Nylon
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Color</td>
+                              <td>Natural</td>
+                            </tr>
+                            <tr>
+                              <td>Size</td>
+                              <td>100 x 50 x 30 cm</td>
+                            </tr>
+                            <tr>
+                              <td>Rayung</td>
+                              <td>180 gram</td>
+                            </tr>
+                            <tr>
+                              <td>Finish Good</td>
+                              <td>380 gram</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Bamboo</td>
+                              <td>Color</td>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">5</td>
+                              <td rowspan="4">Nylon</td>
+                              <td rowspan="4">Color</td>
+                            <tr>
+                              <td>Red</td>
+                            </tr>
+                            <tr>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td>Brown</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles / 10 pcs</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 2 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu2"
+                        aria-expanded="false" aria-controls="kartu2" style="background-color:#fdfdfd; color:#34af19 ">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Sapu Manohara.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+
+                        </div>
+                        <h3>Manohara Grass Broom</h3>
+
+                        <p class="pt-3" style="color: #34af19 ;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu2">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="5">3</td>
+                              <td rowspan="5">Rayung</td>
+                              <td>Material</td>
+                              <td>Rayung, Bamboo, Wlingi, Nylon
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Color</td>
+                              <td>Natural</td>
+                            </tr>
+                            <tr>
+                              <td>Size</td>
+                              <td>100 x 50 x 30 cm</td>
+                            </tr>
+                            <tr>
+                              <td>Rayung</td>
+                              <td>200 gram</td>
+                            </tr>
+                            <tr>
+                              <td>Finish Good</td>
+                              <td>400 gram</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Bamboo</td>
+                              <td>Color</td>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">5</td>
+                              <td rowspan="4">Nylon</td>
+                              <td rowspan="4">Color</td>
+                            <tr>
+                              <td>Red</td>
+                            </tr>
+                            <tr>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td>Brown</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles / 10 pcs</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 3 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu3"
+                        aria-expanded="false" aria-controls="kartu2" style="background-color:#fdfdfd; color:#34af19 ">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Sapu BCL.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+
+                        </div>
+                        <h3>BCL Grass Broom</h3>
+
+                        <p class="pt-3" style="color: #34af19 ;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu3">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="5">3</td>
+                              <td rowspan="5">Rayung</td>
+                              <td>Material</td>
+                              <td>Rayung, Bamboo, Wlingi, Nylon
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Color</td>
+                              <td>Natural</td>
+                            </tr>
+                            <tr>
+                              <td>Size</td>
+                              <td>100 x 50 x 30 cm</td>
+                            </tr>
+                            <tr>
+                              <td>Rayung</td>
+                              <td>200 gram</td>
+                            </tr>
+                            <tr>
+                              <td>Finish Good</td>
+                              <td>400 gram</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Bamboo</td>
+                              <td>Color</td>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">5</td>
+                              <td rowspan="4">Nylon</td>
+                              <td rowspan="4">Color</td>
+                            <tr>
+                              <td>Red</td>
+                            </tr>
+                            <tr>
+                              <td>Yellow</td>
+                            </tr>
+                            <tr>
+                              <td>Brown</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles / 10 pcs</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <img class="fotoProduk" src="./asset/img/rayung/fotocircle.png" alt="" />
-              </a>
+              </div>
+
+              <!-- slide 2 -->
+              <div class="carousel-item ">
+                <div class="row g-5">
+                  <!-- service 4 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn  pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu4"
+                        aria-expanded="false" aria-controls="kartu1">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Sapu Lakop (2).jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+
+                        </div>
+                        <h3 style="color:#34af19;">Lakop Grass Broom</h3>
+                        <p class="pt-3" style="color:#34af19;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu4">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="5">3</td>
+                              <td rowspan="5">Rayung</td>
+                              <td>Material</td>
+                              <td>Rayung, Lakop, Hard Wood Stick, Yarn
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Color</td>
+                              <td>Natural</td>
+                            </tr>
+                            <tr>
+                              <td>Size</td>
+                              <td>100 x 40 x 20 cm</td>
+                            </tr>
+                            <tr>
+                              <td>Rayung</td>
+                              <td>180 gram</td>
+                            </tr>
+                            <tr>
+                              <td>Finish Good</td>
+                              <td>425 gram</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Hard Wood Stick</td>
+                              <td>Color</td>
+                              <td>Grey</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">5</td>
+                              <td rowspan="3">Yarn</td>
+                              <td rowspan="3">Color</td>
+                            <tr>
+                              <td>Red</td>
+                            </tr>
+                            <tr>
+                              <td>White</td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles / 10 pcs</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 5 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu5"
+                        aria-expanded="false" aria-controls="kartu2" style="background-color:#fdfdfd; color:#34af19 ">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Sapu Ijuk.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+
+                        </div>
+                        <h3>Ijuk Broom</h3>
+
+                        <p class="pt-3" style="color: #34af19 ;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu5">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="5">3</td>
+                              <td rowspan="5">Rayung</td>
+                              <td>Material</td>
+                              <td>Ijuk, Lakop, Hard Wood Stick, Yarn
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Color</td>
+                              <td>Natural</td>
+                            </tr>
+                            <tr>
+                              <td>Size</td>
+                              <td>100 x 40 x 20 cm</td>
+                            </tr>
+                            <tr>
+                              <td>Ijuk</td>
+                              <td>180 gram</td>
+                            </tr>
+                            <tr>
+                              <td>Finish Good</td>
+                              <td>425 gram</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Hard Wood Stick</td>
+                              <td>Color</td>
+                              <td>Grey</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">5</td>
+                              <td rowspan="3">Yarn</td>
+                              <td rowspan="3">Color</td>
+                            <tr>
+                              <td>Red</td>
+                            </tr>
+                            <tr>
+                              <td>White</td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles / 10 pcs</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- service 6 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card">
+                      <button class="btn pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu6"
+                        aria-expanded="false" aria-controls="kartu2" style="background-color:#fdfdfd; color:#34af19 ">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Rayung Besetan Grade A.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+                        </div>
+                        <h3>Grass Broom Raw Material (Rayung Model A)</h3>
+                        <p class="pt-3" style="color: #34af19 ;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu6">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Color</td>
+                              <td>Green</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Size</td>
+                              <td>45-60 cm</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Packing</td>
+                              <td colspan="2">Sack @50kg</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slide 3 -->
+              <div class="carousel-item">
+                <div class="row g-5">
+                  <!-- service 7 -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 kartuPembungkus m-auto">
+                    <!-- judul service -->
+                    <div class="card justify-content-center">
+                      <button class="btn  pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#kartu7"
+                        aria-expanded="false" aria-controls="kartu1">
+                        <div class="fa-2x text-center pt-4">
+                          <img src="./asset/img/produk/Rayung Kojoran Grade A.jpg" alt="" class="card-img mt-5 mb-3"
+                            style="height: 100%; width: 70%;">
+
+                        </div>
+                        <h3 style="color:#34af19;">Grass Broom Raw Material (Rayung Model B)</h3>
+                        <p class="pt-3" style="color:#34af19;">Click for more info</p>
+                      </button>
+                    </div>
+                    <!-- info service -->
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-vertical" id="kartu7">
+                        <div class="card card-body">
+                          <table style="width:100%" class="text-center  mb-4">
+                            <tr>
+                              <th>No.</th>
+                              <th>Item</th>
+                              <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Market</td>
+                              <td colspan="3">Worldwide</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>HS Code</td>
+                              <td colspan="3">96031000</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Color</td>
+                              <td>Green</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Size</td>
+                              <td>120-150 cm</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Packing</td>
+                              <td colspan="2">Bundles /25kg</td>
+                            </tr>
+                          </table>
+                          <button class="btn btn-success"> <a
+                              href="https://api.whatsapp.com/send?phone=6281391749911">ORDER
+                              NOW</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-6 text-white">
-              <h2 class="text-thin text-center mb-3">Lorem ipsum dolor sit amet.</h2>
-              <h4 class="quotes mb-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-                voluptatibus?"</h4>
-              <h5 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et minus beatae delectus,
-                similique
-                rem culpa blanditiis illo deleniti nihil aspernatur repellat, at suscipit distinctio sequi praesentium
-                ex omnis. Itaque qui enim nesciunt officiis obcaecati quaerat voluptatibus magnam earum rem magni, ad
-                autem consequatur! Iste necessitatibus corrupti exercitationem illum, magni sunt vel? Non nihil
-                cupiditate explicabo.:</h5>
-              <h5 class="">
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad!</li>
-                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, excepturi.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
-              </h5>
+            <!-- pagination -->
+            <nav aria-label="...">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#menuCarousel" data-bs-slide-to="prev">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#menuCarousel" data-bs-slide-to="0">1</a></li>
+                <li class="page-item"><a class="page-link" href="#menuCarousel" data-bs-slide-to="1">2</a></li>
+                <li class="page-item"><a class="page-link" href="#menuCarousel" data-bs-slide-to="2">3</a></li>
+                <li class="page-item"><a class="page-link" href="#menuCarousel" data-bs-slide-to="next">Next</a></li>
+              </ul>
+            </nav>
+            <!-- end pagination -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- portfolio -->
+    <div class="layanan"></div>
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title text-center">Gallery</h1>
+          <div class="line mt-3 mb-5"></div>
+        </header>
+        <div id="menuGaleri" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- galery page 1 -->
+            <div class="carousel-item active">
+              <div class="gPage1">
+                <div class="row portfolio-container">
+                  <!-- foto 1 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto11.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto11.jpg" data-lightbox="portfolio"
+                          data-title="We take raw materials from various places, one of which is in Cikadu Village"
+                          class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 2 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto28.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto28.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="
+                        Cikadu Village is one of the places where we take our raw materials" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 3 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto3.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto3.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="We select only the best raw materials for our products" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="row portfolio-container">
+                  <!-- foto 4 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto6.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto6.jpg" data-lightbox="portfolio"
+                          data-title="Our employees are sorting and binding grass broom raw material"
+                          class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 5 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto25.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto25.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="
+                        The drying process is carried out after the sorting process" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 6 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto24.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto24.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="The drying process is carried out by Cikadu villager as our employees"
+                          title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row portfolio-container ">
+                    <!-- video 1 -->
+                    <div class="col-lg-6 col-md-6  filter-card ">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid">
+                            <source src="./asset/vid/video7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- video 2 -->
+                    <div class="col-lg-6 col-md-6  filter-card  ">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid">
+                            <source src="./asset/vid/video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- galeri page 2 -->
+            <div class="carousel-item">
+              <div class="gPage1">
+                <div class="row portfolio-container">
+                  <!-- foto 7 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto7.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto7.jpg" data-lightbox="portfolio"
+                          data-title="Our employees are very enthusiastic about processing grass broom raw material"
+                          class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 8 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto20.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto20.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="
+                        The dried grass after the drying process" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 9 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto17.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto17.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="Our employees are very enthusiastic about processing grass broom raw material"
+                          title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="row portfolio-container">
+                  <!-- foto 10 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto15.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto15.jpg" data-lightbox="portfolio"
+                          data-title="We are happy to work for you" class="link-preview" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+
+                    </div>
+                  </div>
+                  <!-- foto 11 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto36.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto36.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="
+                        Production process by our employees" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 12 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto39.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto39.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="One of our employees is working diligently" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row portfolio-container ">
+                    <!-- video 3 -->
+                    <div class="col-lg-6 col-md-6  filter-card ">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid">
+                            <source src="./asset/vid/video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- video 4 -->
+                    <div class="col-lg-6 col-md-6  filter-card  ">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid">
+                            <source src="./asset/vid/video5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- galeri page 3 -->
+            <div class="carousel-item">
+              <div class="gPage1">
+                <div class="row portfolio-container">
+                  <!-- foto 13 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto57.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto57.jpg" data-lightbox="portfolio" data-title="
+                          We also produce brooms from the raw materials we have" class="link-preview"
+                          title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 14 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto60.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto60.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="
+                        Our grass broom production process" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 15 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto61.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto61.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="One of our employees is making a broom" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="row portfolio-container">
+                  <!-- foto 16 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto16.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto16.jpg" data-lightbox="portfolio" data-title="
+                          Sorting process, raw materials are ready to be shipped" class="link-preview"
+                          title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 17 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto59-b.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto59-b.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="Our products are ready to be ship wherever you are" title="Preview"><i
+                            class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- foto 18 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                      <figure>
+                        <img src="./asset/img/rayung/foto49.jpg" class="img-fluid" alt="">
+                        <a href="./asset/img/rayung/foto49.jpg" class="link-preview" data-lightbox="portfolio"
+                          data-title="Indo Rayung Nusantara is ready to delivery our products with high quality"
+                          title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-container ">
+                    <!-- video 5 -->
+                    <div class="col-lg-6 col-md-6  filter-card">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid videoBerdiri">
+                            <source src="./asset/vid/video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- video 6 -->
+                    <div class="col-lg-6 col-md-6  filter-card  ">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <video controls loop class="img-fluid videoBerdiri">
+                            <source src="./asset/vid/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </section>
-  </div>
-  <!-- End Our Produk -->
-
-  <!-- keunggulan  -->
-  <section id="call-to-action" class="wow fadeIn">
-    <div class="container text-center">
-      <h3>Call To Action</h3>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <a class="cta-btn" href="#">Call To Action</a>
-    </div>
-  </section>
-  <!-- end keunggulan -->
-
-
-  <!-- portfolio -->
-  <section id="portfolio" class="section-bg">
-    <div class="container">
-
-      <header class="section-header">
-        <h1 class="section-title text-center  ">Gallery</h1>
-        <div class="line mt-3 mb-5"></div>
-      </header>
-
-      <div class="row ">
-        <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+        <!-- pagination -->
+        <nav aria-label="..." class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="prev">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="0">1</a></li>
+            <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="1">2</a></li>
+            <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="2">3</a></li>
+            <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="next">Next</a></li>
           </ul>
-        </div>
+        </nav>
+        <!-- end pagination -->
       </div>
-      <!-- foto galeri -->
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto8.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto8.jpg" data-lightbox="portfolio" data-title="Foto1" class="link-preview"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">App 1</a></h4>
-              <p>App</p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto2.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Foto2"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Web 3</a></h4>
-              <p>Web</p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto7.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Foto3"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">App 2</a></h4>
-              <p>App</p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto10.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto10.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto4"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Card 2</a></h4>
-              <p>Card</p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto9.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto9.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto5"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Web 2</a></h4>
-              <p>Web</p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="./asset/img/rayung/foto3.jpg" class="img-fluid" alt="">
-              <a href="./asset/img/rayung/foto3.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto6"
-                title="Preview"><i class="ion ion-eye"></i></a>
-              <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-            </figure>
-            <!-- 
-            <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <!-- video galeri -->
-      <div class="row portfolio-container ">
-        <div class="col-lg-6 col-md-6  filter-card ">
-          <div class="portfolio-wrap">
-            <figure>
-              <video controls muted loop class="img-fluid">
-                <source src="./asset/vid/video3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Card 1</a></h4>
-              <p>Card</p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6  filter-card  ">
-          <div class="portfolio-wrap">
-            <figure>
-              <video controls muted loop class="img-fluid">
-                <source src="./asset/vid/video4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Card 3</a></h4>
-              <p>Card</p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="row portfolio-container justify-content-center ">
-        <div class="col-lg-6 col-md-6  filter-card align-items-center ">
-          <div class="portfolio-wrap">
-            <figure>
-              <video controls muted loop class="img-fluid">
-                <source src="./asset/vid/video5.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </figure>
-
-            <!-- <div class="portfolio-info">
-              <h4><a href="#">Web 1</a></h4>
-              <p>Web</p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-
-
-
-
-    </div>
-  </section>
-
-  <!-- end portfolio -->
-
-
-
-  <!--Pricing-Section-Start-->
-  <section id="pricing">
-    <div class="container">
-      <div class="col mb-5">
-        <div class="heading ">
-          <h2 class=" mb-3">PRICE PACKAGE</h2>
-          <div class="line mb-3"></div>
-          <p class="mb-5"><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod
-            tempor
-            incididunt ut
-            et dolore magna aliqua. Ut enim ad minim veniam</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-            <ul class="pricing">
-              <li class="plan-header">
-                <div class="price-duration">
-                  <div class="price"> $39 </div>
-                  <div class="duration"> 5 kg </div>
-                </div>
-                <div class="plan-name"> Starter </div>
-              </li>
-              <li><strong>1</strong> DOMAIN</li>
-              <li><strong>100GB</strong> DISK SPACE</li>
-              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-              <li>SHARED SSL CERTIFICATE</li>
-              <li><strong>10</strong> EMAIL ADDRESS</li>
-              <li><strong>24/7</strong> SUPPORT</li>
-              <li><a class="btn btn-success" href="#">Order Now</a> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-            <ul class="pricing">
-              <li class="plan-header">
-                <div class="price-duration justify-items-center">
-                  <div class="price"> $69 </div>
-                  <p>10 kg</p>
-                </div>
-                <div class="plan-name"> Business </div>
-              </li>
-              <li><strong>3</strong> DOMAIN</li>
-              <li><strong>300GB</strong> DISK SPACE</li>
-              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-              <li>SHARED SSL CERTIFICATE</li>
-              <li><strong>30</strong> EMAIL ADDRESS</li>
-              <li><strong>24/7</strong> SUPPORT</li>
-              <li><a class="btn btn-success" href="#">Order Now</a> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-            <ul class="pricing">
-              <li class="plan-header">
-                <div class="price-duration">
-                  <div class="price"> $99 </div>
-                  <div class="duration"> 15 kg </div>
-                </div>
-                <div class="plan-name"> Pro </div>
-              </li>
-              <li><strong>5</strong> DOMAIN</li>
-              <li><strong>500GB</strong> DISK SPACE</li>
-              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-              <li>SHARED SSL CERTIFICATE</li>
-              <li><strong>50</strong> EMAIL ADDRESS</li>
-              <li><strong>24/7</strong> SUPPORT</li>
-              <li><a class="btn btn-success" href="#">Order Now</a> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-            <ul class="pricing">
-              <li class="plan-header">
-                <div class="price-duration">
-                  <div class="price"> $199 </div>
-                  <div class="duration"> p20 kg </div>
-                </div>
-                <div class="plan-name"> Ultra </div>
-              </li>
-              <li><strong>10</strong> DOMAIN</li>
-              <li><strong>1000GB</strong> DISK SPACE</li>
-              <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-              <li>SHARED SSL CERTIFICATE</li>
-              <li><strong>100</strong> EMAIL ADDRESS</li>
-              <li><strong>24/7</strong> SUPPORT</li>
-              <li><a class="btn btn-success" href="#">Order Now</a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Kontak -->
-  <div class="" id="contact">
-    <section class="kontak">
-      <div class="container">
-        <div class="deskripsiKontak text-center">
-          <h1>Contact Us</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusamus laudantium perferendis aliquam
-            aut sequi explicabo! Magnam deleniti eius tenetur atque voluptas ipsa ut! A exercitationem obcaecati modi
-            accusamus at soluta aliquid, dignissimos eaque ullam eveniet. Omnis, magni nostrum, nihil qui quisquam quasi
-            reprehenderit dolorum pariatur quae dignissimos aspernatur recusandae.</p>
-        </div>
-        <div class="container infoKontak">
-          <div class="row gy-4 justify-content-center">
-            <h3 class="text-center">Office Yogyakarta</h3>
-            <div class="col-lg-3">
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Lokasi:</h4>
-                  <p> <a
-                      href="https://www.google.com/maps/place/R%26P+Law+Office/@-7.825529,110.2549,12z/data=!4m5!3m4!1s0x0:0x817be8c3d9255a88!8m2!3d-7.8255288!4d110.2548998?hl=id">Polaman,
-                      RT/RW: 014/000, Argorejo, Sedayu, Bantul, D.I.Yogyakarta.</a> </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p><a href="https://mailto:rnplawoffice2015@gmail.com">rnplawoffice2015@gmail.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Telp:</h4>
-                  <p><a href="https://api.whatsapp.com/send?phone=628112642402">+62 8222 416 0754</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </section>
 
-  </div>
-  <!-- gmap -->
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53178.85947617357!2d110.240482994728!3d-7.8381593645948895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x817be8c3d9255a88!2sR%26P%20Law%20Office!5e0!3m2!1sid!2sid!4v1659163489264!5m2!1sid!2sid"
-    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <!-- End Kontak -->
+    <!-- end portfolio -->
 
-  <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="footer-content position-relative">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 text-center">
-            <div class="row">
-              <div class="col-lg-6 footer-links">
-                <h4>Layanan Kami</h4>
-                <ul>
-                  <li><a href="service.html">Litigasi</a></li>
-                  <li><a href="service.html">Praktik Multi Disiplin</a></li>
-                  <li><a href="service.html">Perbankan & Keuangan</a></li>
-                  <li><a href="service.html">Pertambangan</a></li>
-                  <li><a href="service.html">Asuransi</a></li>
-                  <li><a href="service.html">Ketenagakerjaan</a></li>
-                </ul>
+    <!-- Kontak -->
+    <div class="" id="contact">
+      <section class="kontak">
+        <div class="container">
+          <div class="deskripsiKontak text-center">
+            <h1>Contact Us</h1>
+            <p>More information about our products and company, you can contact us. We are happy to respond to you
+              sincerely. If you are curious and want to visit our production site, please write down the address below
+              or
+              browse via google map. More information, please check below. Thank you.</p>
+          </div>
+          <div class="container infoKontak">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location :</h4>
+                    <p> <a href="https://www.google.com/maps?q=-7.1651978,109.4786098&z=17&hl=id">Desa
+                        Cikadu RT 006 RW 002 Kec. Watukumpul Kab. Pemalang Jawa Tengah. Kode Pos : 52357</a> </p>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-lg-6 footer-links">
-                <h4><br></h4>
-                <ul>
-                  <li><a href="service.html">Pertanahan</a></li>
-                  <li><a href="service.html">Kekayaan Intelektual</a></li>
-                  <li><a href="service.html">Kesehatan</a></li>
-                  <li><a href="service.html">Ekspor & Impor</a></li>
-                  <li><a href="service.html">Kepailitan</a></li>
-                  <li><a href="service.html">Kepailitan</a></li>
-                </ul>
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email :</h4>
+                    <p><a href="https://mailto:admin@indorayung.com">admin@indorayung.com</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Phone Number :</h4>
+                    <p><a href="https://api.whatsapp.com/send?phone=6281391749911">+62 813 917 499 11</a></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
-            <div class="footer-info">
-              <img src="./asset/img/rayung/logo_nobg.png" alt="" width="150px">
-              <p class="">Head Office :
-                Soho-Capital-Podomoro City, 25th Floor, Unit 2508. Jl.Letjen.S.Parman, Kav.28, Tanjung Duren Selatan,
-                Grogol Petamburan, Jakarta Barat.<br><br>
-                Office Yogyakarta : Polaman, RT/RW: 014/000, Argorejo, Sedayu, Bantul, D.I.Yogyakarta.<br><br>
+        </div>
+      </section>
+    </div>
+    <!-- gmap -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.660422002146!2d109.4764211147743!3d-7.1651977948265415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9542e9ace76d302f!2zN8KwMDknNTQuNyJTIDEwOcKwMjgnNDMuMCJF!5e0!3m2!1sid!2sid!4v1667197598248!5m2!1sid!2sid"
+      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    <!-- End Kontak -->
 
-                <strong>Phone:</strong> <a href="https://api.whatsapp.com/send?phone=628112642402">+62 8222 416 0754</a>
-                <br>
-                <strong>Email:</strong> <a href="https://mailto:rnplawoffice2015@gmail.com">contoh@gmail.com</a><br>
-              </p>
-              <div class="social-links d-flex justify-content-center mt-3">
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-content position-relative">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 text-center">
+              <div class="footer-info">
+                <div class="text-center">
+                  <img src="./asset/img/rayung/logo_nobg.png" alt="" width="150px">
+                </div>
+
+                <p class="">Head Office :
+                  <p> <a href="https://www.google.com/maps?q=-7.1651978,109.4786098&z=17&hl=id">Desa
+                      Cikadu RT 006 RW 002 Kec. Watukumpul Kab. Pemalang Jawa Tengah. Kode Pos : 52357 <br><br>
+
+                      <strong>Phone:</strong> <a href="https://api.whatsapp.com/send?phone=6281391749911">+62 813 917
+                        499
+                        11</a>
+                      <br>
+                      <strong>Email:</strong> <a href="https://mailto:admin@indorayung.com">admin@indorayung.com</a><br>
+                  </p>
+                  <div class="social-links d-flex justify-content-center mt-3">
+                    <!-- <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/profile.php?id=100087627567383"
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/indorayungnusantara/"
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/cv-indo-rayung-nusantara-833653258/"
+                      class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Sample</span></strong>.
-        </div>
-        <div class="credits">
-          Created by <a href="https://api.whatsapp.com/send?phone=6282224160754">Lazuardi Yudistira</a>
+      <div class="footer-legal text-center position-relative">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>CV.INDO RAYUNG NUSANTARA</span></strong>.
+          </div>
+          <div class="credits">
+            Created by <a href="https://api.whatsapp.com/send?phone=6282224160754">Lazuardi Yudistira</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-  <!-- Scroll Up -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
-  <!-- Scroll End -->
+    <!-- Scroll Up -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    <!-- Scroll End -->
 
-  <!-- WhatsAap floating Button -->
-  <a href="https://api.whatsapp.com/send?phone=628112642402" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-  </a>
-  <!-- End Whatsapp -->
+    <!-- WhatsAap floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=6281391749911" class="wa-popup" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-  </script>
-
-
-  <!-- Vendor Js -->
-  <script src="./asset/vendor/jquery/jquery.min.js"></script>
-  <script src="./asset/vendor/lightbox/js/lightbox.min.js"></script>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=6281391749911">
+      <div class="dialog-pop">
+        <p class="text-center justify-content-center">Can i help You ?</p>
+      </div>
+    </a>
 
 
-  <!-- Lord icon -->
-  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/fb1f2e46f7.js" crossorigin="anonymous"></script>
+    <!-- End Whatsapp -->
 
-
-  <!-- My Js -->
-  <script src="./asset/js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 
 
-</body>
+    <!-- Vendor Js -->
+    <script src="./asset/vendor/jquery/jquery.min.js"></script>
+    <script src="./asset/vendor/lightbox/js/lightbox.min.js"></script>
 
-</html>
+
+    <!-- Lord icon -->
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fb1f2e46f7.js" crossorigin="anonymous"></script>
+
+
+    <!-- My Js -->
+    <script src="./asset/js/script.js"></script>
+
+
+  </body>
+
+  </html>
