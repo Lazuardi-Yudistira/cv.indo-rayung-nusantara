@@ -1,16 +1,17 @@
 /* navbar */
-.navbar {
+/* .navbar {
   padding: 20px 0px;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
   padding-left: 10px;
   margin-right: 10px;
-}
+} */
 
 
 .navbar ul li a {
   color: rgb(255, 255, 255);
+  font-weight: 500;
 }
 
 .navbar ul li a:hover {
@@ -23,6 +24,7 @@
 .navbar-brand span {
   color: #34af19;
   font-weight: bold;
+  font-size: 17px;
 }
 
 .navbar-brand span p {
@@ -32,38 +34,53 @@
 
 
 
+#navbarNav ul li a:hover {
+  color: white;
+}
+
 
 /* navbar change color while scrolling */
 #header.header-scrolled {
   background: white;
-  padding: 20px 0;
-  height: 72px;
+  /* padding: 20px 0; */
+  /* height: 105px; */
   transition: all 0.5s;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 #header.header-scrolled ul li a {
   color: #34af19;
+  font-weight: bolder;
 }
 
 #header.header-scrolled ul li a:hover {
-  background-color: #000000;
+  color: white;
 }
 
-@media (max-width: 990px) {
+/* tampilan hp kecil */
+@media (max-width: 482px) {
+
   .navbar-brand span {
-    font-size: 18px;
+    display: none
   }
+
+
+
 }
+
+
 
 
 
 @media (max-width: 990px) {
-  .navbar ul li a {
-    color: black;
-
+  #navbarNav ul li a {
+    color: #000;
+    transition: all 0.5s;
+    font-weight: bolder;
   }
 }
+
+
 
 @media (max-width: 990px) {
   .navbar ul li a:hover {
@@ -72,6 +89,8 @@
     border-radius: 10px;
   }
 }
+
+
 
 
 
@@ -85,11 +104,26 @@
 }
 
 
+
+
+
+
+
 /* hero */
 .gambarSlide {
   height: 41rem;
 
 }
+
+
+
+@media (max-width: 990px) {
+  #videoPromo video {
+    width: auto;
+    height: 41rem;
+  }
+}
+
 
 .carousel-item:before {
   content: "";
@@ -118,9 +152,16 @@
 }
 
 .carousel-content .company {
-  font-size: 30px;
-  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bolder;
+  color: #34af19;
 }
+
+
+.carousel-content p span {
+  color: #c6901c !important;
+}
+
 
 .carousel-content .deskripsi {
   font-size: 50px;
@@ -133,11 +174,11 @@
   color: rgb(255, 255, 255);
 }
 
-/* tampilan mobile */
+/* tampilan mobile tab */
 @media (max-width: 768px) {
   .carousel-content .company {
     font-size: 24px;
-    color: goldenrod;
+
 
   }
 
@@ -147,8 +188,6 @@
     font-weight: 700;
 
   }
-
-
 
 
   .carousel-content .deskripsi2 {
@@ -168,6 +207,9 @@
   }
 
 }
+
+
+
 
 /* feature */
 #featured-services {
@@ -225,11 +267,11 @@
 
 /* about */
 #about {
-  padding-top: 75px;
-  padding-bottom: 85px;
-  padding-right: 50px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(4, 4, 4);
+  padding-top: 115px;
+  padding-bottom: 95px;
+  /* padding-right: 50px; */
+  /* background-color: rgb(255, 255, 255);
+  color: rgb(4, 4, 4); */
 }
 
 #about span {
@@ -247,14 +289,14 @@
   margin-left: 42.5%;
 }
 
-#about {
+/* #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 80px 0 40px 0;
   position: relative;
-}
+} */
 
-#about::before {
+/* #about::before {
   content: '';
   position: absolute;
   left: 0;
@@ -264,7 +306,7 @@
   background: rgba(255, 255, 255, 0.92);
   z-index: 9;
 
-}
+} */
 
 #about .container {
   position: relative;
@@ -343,6 +385,8 @@
 
 
 
+
+
 /* visi misi */
 #visi {
   background-color: #000;
@@ -379,9 +423,7 @@
 }
 
 
-.image-border-radius .image-hover-overlay {
-  border-radius: 3px;
-}
+
 
 .image-hover-overlay:hover {
   opacity: 1;
@@ -439,11 +481,56 @@
   transform: scale(1.1);
 }
 
+/* keunggulan */
+#call-to-action {
+  width: auto;
+  background-image: linear-gradient(rgba(27, 11, 5, 0.65), rgba(15, 5, 2, 0.65)),
+    url("../img/rayung/foto2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+#call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action p {
+  color: #fff;
+  font-size: 17px;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #18d26e;
+  border: 2px solid #18d26e;
+}
+
+#call-to-action a {
+  text-decoration: none;
+}
 
 
 .produk {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 115px;
+  padding-bottom: 95px;
   background-color: #34af19;
 }
 
@@ -465,9 +552,9 @@
 
 }
 
-.card-body:hover {
+.produk .card-body:hover {
   background-color: rgb(48, 44, 44);
-  color: gold;
+  color: #34af19;
 
 }
 
@@ -500,57 +587,63 @@
   border: 1px solid #ffffff;
   width: 15%;
   margin-left: 42.5%;
+  margin-bottom: 70px;
+}
+
+.produk h5 strong {
+  box-shadow: #000;
+}
+
+
+@media (max-width: 991px) {
+  .randp {
+    display: none;
+  }
+}
+
+
+/* layanan */
+
+#layanan {
+
+  background-color: #333333;
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+}
+
+
+#layanan .card-body {
+  font-weight: bolder;
+  margin-bottom: 50px;
+
 }
 
 
 
-
-/* keunggulan */
-#call-to-action {
-  width: auto;
-  background-image: linear-gradient(rgba(27, 11, 5, 0.65), rgba(15, 5, 2, 0.65)),
-    url("../img/rayung/foto2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  padding: 60px 0;
+#layanan .kartuPembungkus:hover {
+  transform: translateY(20px);
+  transition: ease-in-out 0.3s;
 }
 
-#call-to-action h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+.pagination .page-link {
+  color: #048221 !important;
 }
 
-#call-to-action p {
-  color: #fff;
+#layanan .kartuPembungkus .btn a {
+  text-decoration: none;
+  color: white;
 }
 
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
 
-#call-to-action .cta-btn:hover {
-  background: #18d26e;
-  border: 2px solid #18d26e;
-}
+
 
 /* Portfolio Section
 --------------------------------*/
 
 #portfolio {
-  padding: 75px 0;
+  padding-top: 115px;
+  padding-bottom: 95px;
   background-color: rgb(206, 200, 200);
 }
 
@@ -587,7 +680,7 @@
 }
 
 #portfolio .portfolio-wrap {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.08);
   transition: 0.3s;
 }
 
@@ -700,102 +793,25 @@
 }
 
 
-
-
-/*Pricing-stylesheets-include-here*/
-#pricing {
-  padding-top: 75px;
-  padding-bottom: 50px;
-  text-align: center;
-
+table,
+th,
+td {
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#pricing ul.pricing {
-  list-style: none;
-  padding: 0;
-  margin: 70px 0 30px;
-  border: 1px solid #eee;
-  border-radius: 5px 5px 4px 4px;
-  padding: 15px;
-  text-align: center;
-}
-
-#pricing ul.pricing:hover {
-  box-shadow: 0 8px 8px rgba(0, 0, 0, .26);
-
-  transition-duration: 0.3s;
-}
-
-#pricing ul.pricing li {
-  display: block;
-  padding: 10px;
-  color: #666;
-}
-
-#pricing ul.pricing li.plan-header {
-  background: #f8f8f8;
-  border-radius: 4px 4px 0 0;
-  margin: -15px -15px 10px;
-  padding: 15px 15px 30px;
-  border: 0;
-}
-
-#pricing ul.pricing li.plan-header .price-duration {
-  position: relative;
-  margin-top: -63px;
-  top: -10px;
-  display: inline-block;
-  width: 116px;
-  height: 116px;
-  background-color: #34af19;
-  color: #fff;
-  border-radius: 100px;
-  border: 5px solid #f6f6f6;
-}
-
-/* #pricing ul.pricing li.plan-header .price-duration {
-  display: block;
-  line-height: 1;
+/* .videoBerdiri {
+  padding-left: 100px;
+  padding-bottom: 10px;
 } */
-
-#pricing ul.pricing strong {
-  font-size: 14px;
-}
-
-#pricing ul.pricing li.plan-header .price-duration>.price {
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 35px;
-}
-
-#pricing ul.pricing li.plan-header .price-duration>.duration {
-  margin-top: 5px;
-}
-
-#pricing ul.pricing li.plan-header .plan-name {
-  margin-top: 10px;
-  font-size: 21px;
-  color: #444;
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-#pricing ul.pricing.featured {
-  background: #222534;
-  color: #fff;
-  border: 0;
-}
-
-#pricing ul.pricing.featured li.plan-header .plan-name {
-  color: #fff;
-}
 
 
 
 /* Kontak */
 #contact {
-  padding-top: 80px;
+  padding-top: 115px;
+
   color: white;
   background-color: #34af19;
   /* background-color: #048221; */
@@ -1011,7 +1027,7 @@
   /* Fixed/sticky position */
   bottom: 35px;
   /* Place the button at the bottom of the page */
-  right: 40px;
+  right: 25px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -1021,13 +1037,12 @@
   /* Remove outline */
   background-color: rgba(0, 0, 0, 0);
   /* Set a background color */
-  color: rgb(218, 100, 32);
+  color: #048221;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
   border-radius: 30%;
   /* Rounded corners */
-
 
 }
 
@@ -1038,17 +1053,17 @@
 #myBtn:hover {
   background-color: rgba(0, 0, 0, 0);
   /* Add a dark-grey background on hover */
-  color: rgb(0, 115, 255);
+  color: #34af19;
 }
 
 
 /* Whatsapp floating button */
-.float {
+.wa-popup {
   position: fixed;
   width: 60px;
   height: 60px;
   bottom: 40px;
-  left: 40px;
+  left: 25px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -1058,11 +1073,36 @@
   z-index: 100;
 }
 
-.float:hover {
+.wa-popup:hover {
   background-color: #FFF;
   color: #25d366;
 }
 
 .my-float {
   margin-top: 16px;
+}
+
+.dialog-pop {
+  position: fixed;
+  height: 30px;
+  border-radius: 15px;
+  bottom: 45px;
+  left: 65px;
+  background-color: #ffffff;
+  color: #000;
+  padding-left: 25px;
+  padding-top: 3px;
+  padding-right: 10px;
+
+}
+
+.dialog-pop:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+@media (max-width: 482px) {
+  .dialog-pop {
+    display: none;
+  }
 }
